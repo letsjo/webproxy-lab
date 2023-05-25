@@ -2,6 +2,21 @@
 <head><title>test</title></head>
 <body> 
 <img align="middle" src="godzilla.gif">
-Dave O'Hallaron
+<p>Dave O'Hallaron</p>
+<video autoplay loop muted>
+    <source src="sunrise.mp4" type="video/mp4">
+</video>
+
+<!-- 
+    숙제 문제 11.10
+    CGI adder 함수에 대한 HTML 형식을 작성하고, 두 개의 숫자로 채우는 텍스트 상자를 포함하도록 한다. 또한 GET 메소드를 사용하여 컨텐츠를 요청하도록 한다.
+
+    form 데이터로 GET 요청을 보내서 CGI 프로그램을 실행하도록 하고, adder.c 를 변경했습니다.
+ -->
+<form action="/cgi-bin/adder" method="GET">
+    <p>number1: <input type="text" name="num1"/></p>
+    <p>number2: <input type="text" name="num2"/></p>
+    <input type="submit">
+</form>
 </body>
 </html>
